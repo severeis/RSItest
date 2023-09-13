@@ -1,8 +1,0 @@
-{
-"SpaProxyServer": {
-"ServerUrl": "http://localhost:44455",
-"LaunchCommand": "npm start",
-"WorkingDirectory": "C:\\Users\\isurovyi\\source\\repos\\Test\\Part1\\Farm\\ClientApp\\",
-"MaxTimeoutInSeconds": "120"
-}
-}
