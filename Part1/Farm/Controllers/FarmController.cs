@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Farm.Models;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Farm.Controllers
 {
@@ -6,10 +7,7 @@ namespace Farm.Controllers
     [Route("[controller]")]
     public class FarmController : ControllerBase
     {
-        private static readonly List<string> Animals = new List<string>
-        {
-            "Cat", "Dog", "Mouse"
-        };
+        private static readonly HashSet<string> Animals = new() { "Cat", "Dog", "Mouse" };
 
         [HttpGet]
         public IEnumerable<Animal> Get()
